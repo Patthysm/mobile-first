@@ -1,0 +1,146 @@
+.cabecalho__menu{
+    width: 2.25rem;
+    height: 2.25rem;
+    background-image: url(/photos/Menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    position: relative;
+
+}
+.cabecalho{
+    background-color: var(--cor-branca);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem{
+    padding: 1rem;
+}
+#menu{
+    display: none;
+}
+.lista-menu{
+    display: none;
+    position: absolute;
+    top: 7.5%;
+    width: 60vw;
+}
+.container__botao:checked~.lista-menu{
+    display: block;
+    width:auto;
+}
+
+.lista-menu__titulo,.lista-menu__item{
+    padding: 1rem;
+    background-color: var(--cor-branca);
+}
+
+.lista-menu__titulo{
+    color: var(--cor-laranja);
+    font-weight: 700;
+}
+
+
+.lista-menu__link{
+    background: var(--gradiente);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+.container__tituloII{
+    display: none;
+}
+.opcao{
+    display:none;
+}
+.container_link{
+    display: none;
+}
+
+@media screen and (min-width: 1024px){
+    .container__tituloII, .container__titulo-negritoII{
+        font-family: var(--josefin-sans);
+        font-size: 30px;
+    }
+    .container__tituloII{
+        font-weight: 400;
+        font-style: normal;
+        display: block;
+    }
+    .container__titulo-negritoII{
+        font-weight: 700;
+
+    }
+    .opcao{
+        display: flex
+    }
+
+    .opcao-item{
+        padding: 0 1rem;
+        text-transform: uppercase;
+        color: var(--cor-preta);
+    }
+    .opcao-links{
+        text-decoration:none;
+        color: var(--cor-preta);
+    }
+    .container-transparente{
+        display:none;
+    }
+    .cabecalho__menu{
+        display:none;
+    }
+    /* botao */
+    #menu-categoria{
+        display:none;
+    }
+    .container-botao-categoria:checked ~.lista-menu{
+        display:block;
+        width:auto;
+    }
+    
+    
+}
+@media screen and (min-width:1728px) {
+    .container_link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    
+    }
+    .head_texto{
+        font-size: 1.25rem; 
+        color: var(--cor-preta);
+
+    }
+    .opcao{
+     margin-right: auto;
+    }
+    .cabecalho{
+        padding: 0 2rem;
+    }
+    .container-botao-categoria{
+        margin-top: 0;
+    }
+
+}
+
+/* o TIL que adicionamos depois do checked.
+Quando utilizado a class container__botao q selecionou o input no meu arquivo
+de html, colocamos o :checked que é um pseudoclasse que detecta se input está preenchido.
+Depois, o til q foi adicionado depois do checked q é chamado de combinador css
+Pois ele vai procurar se o elemento q vem em seguida tem a classe q foi inserida depois. 
+Por exemplo: tenho a classe container__botao q o checked uma pseudoclasse verifica
+se esta preenchido e entao, vem o til q com o checked vai inserir o valor informado. display: block.
+Se não existir nada depois dele. ele não vai fazer nada. Assim como se não tiver o checked tambem.
+media queries--
+Max-with quando a tela e maior e vai diminuindo e minimo quando a tela e menor e vai aumentando.
+*/

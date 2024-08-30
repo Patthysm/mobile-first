@@ -1,0 +1,51 @@
+.segundo-paragrafo-texto{
+    background-color: var(--cor-branca);
+    color: var(--cor-laranja);
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0 0.5rem 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+.swiper-pagination{
+    position: initial;
+    margin: 0.5rem;
+}
+.swiper-button-prev, .swiper-button-next{
+    display:none;
+}
+
+.swiper-scrollbar{
+    display:none;
+}
+@media screen and (min-width:1024px){
+    .segundo-paragrafo-texto{
+        font-size: 1.62rem;
+        padding: 1.5rem;
+    }
+    .swiper-pagination{
+       margin: 2rem 0 3rem 0 ;
+    }
+    .swiper{
+        width: 80%;
+    }
+   .swiper-button-prev, .swiper-button-next{
+    display: block;
+
+   }
+}
+
+@media screen and (min-width:1728px) {
+    .divisao-card-swiper{
+        display: flex;
+    }
+    .swiper{
+        width: 60%;
+    }
+    
+    
+}

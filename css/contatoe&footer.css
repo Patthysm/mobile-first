@@ -1,0 +1,113 @@
+.Contato{
+    background: var(--cor-branca);
+    padding: 1rem;
+}
+hr{
+    margin: 0;
+}
+.titulo-contato{
+    color: var(--gradiente);
+    font-weight: 500;
+    font-size: 18px;
+    background-clip: text;
+}
+.descricao-contato{
+    color: var(--gradiente);
+    font-weight: 300;
+    margin: 1rem 0;
+}
+.barra-de-pesquisa-contato{
+    font-weight: 400;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 2rem;
+    color: var(--gradiente);
+    background: transparent;
+    font-size: 0.875rem;
+    border: 2px solid var(--azul);
+    width: 90%;
+}
+
+.barra-de-pesquisa-contato::placeholder{
+    background: url("../photos/photo-\ carrosel\ 2/vector.svg") no-repeat;
+    font-family: var(--Poppins);
+    font-weight: 400;
+    background-position: 0.5rem;
+    color: var(--azul);
+}
+.rodapeI{
+    background-color: var(--cor-rodape);
+    display: flex;
+}
+.rodape-texto-I{
+    padding: 1rem;
+    font-size: 1rem;
+    color: var(--cor-preta);
+}
+
+.rodape{
+    display: none;
+}
+@media screen and (min-width:1024px) {
+    /*contato*/
+    .Contato{
+        display: flex;
+        padding: 4rem;
+    }
+    .titulo-contato{
+        font-size: 1.5rem;
+    }
+    .descricao-contato{
+        font-size:  1.12rem; ;
+        margin-top: 1rem;
+    }
+    .barra-de-pesquisa-contato{
+        margin: 2rem 5rem;
+    }
+    /*rodape*/
+    .rodape{
+        background-color: var(--cor-rodape);
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    .rodape-subtexto{
+        font-size:0.87rem ;
+        color: var(--cinza-claro);
+        text-transform: uppercase;
+        margin: 2rem 0 1rem 0;
+    }
+    .rodape-itens{
+        margin: 0.7rem 0;
+    }
+    .rodape-texto{
+        margin: 2rem;
+        font-size: 1.5rem;
+        color: var(--cor-preta);
+    }
+    .rodape-descricao{
+        color: var(--cinza-escuro);
+        text-decoration: none;
+    }
+    .rodape-texto-I{
+        display: none;
+    }
+   
+}
+
+@media screen and (min-width:1728px) {
+    .Contato{
+        padding: 3% 20%;
+    }
+    .barra-de-pesquisa-contato::placeholder{
+        margin: auto;
+    }
+    .rodape{
+        padding: 3% 15%;
+    }
+    .rodape-divisoes{
+        border-left: solid 0.1rem var(--cinza-claro);
+        padding: 1rem;
+
+    }
+}

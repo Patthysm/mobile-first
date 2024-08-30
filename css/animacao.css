@@ -1,0 +1,37 @@
+#coracao{
+    display: none;
+}
+#segundo-coracao{
+    display:none;
+}
+#coracao:checked + label > svg {
+    animation: preencher;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+#segundo-coracao:checked + label > svg{
+    animation: preenchimento;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes preenchimento{
+    0%{
+        fill: transparent;
+    }
+     100% {
+        fill: var(--azul);
+     } 
+}
+
+@keyframes preencher{
+    0%{
+        fill: transparent;
+    }
+     100% {
+        fill: var(--azul);
+     } 
+}
+
+
